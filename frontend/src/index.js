@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
-import Home from './pages/home';
-import Survey from './pages/Survey'
+import Home from './pages/Home';
+import About from './pages/About'
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Header';
+import Header from './components/NavBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +14,7 @@ root.render(
           <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/survey" element={<Survey />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </Router>
     </React.StrictMode>,
