@@ -6,8 +6,6 @@ import Home from './pages/home';
 import Survey from './pages/Survey'
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
-import ClientForm from './components/ClientForm/index.js';
-import FreelanceForm from './components/FreelanceForm/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +15,6 @@ root.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/survey" element={<Survey />} />
-                <Route path="/client" element={<ClientForm />} />
-                <Route path="/freelance" element={<FreelanceForm />} />
             </Routes>
         </Router>
     </React.StrictMode>,
