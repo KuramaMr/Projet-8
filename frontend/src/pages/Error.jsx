@@ -1,9 +1,9 @@
-import ErrorComponent from "../components/ErrorComponents.jsx";
+import ErrorPage from "../components/ErrorComponents.jsx";
 
-const Error = () => {
+function Error() {
     return (
         <div>
-            <ErrorComponent />
+            <ErrorPage />
         </div>
     )
 }
