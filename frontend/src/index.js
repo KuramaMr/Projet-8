@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 import Home from './pages/Home';
-import About from './pages/About'
+import About from './pages/About';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Navbar/NavBar';
-import Error from './pages/Error.jsx'
+import LogementFiche from './pages/LogementFiche.jsx';
+import Error from './pages/Error.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path='/logement' element={<LogementFiche />} />
                 <Route path="/404" element={<Error/>} />
             </Routes>
         </Router>

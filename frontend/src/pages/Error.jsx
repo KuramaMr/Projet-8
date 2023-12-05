@@ -1,11 +1,11 @@
-import ErrorPage from "../components/ErrorComponents.jsx";
+import ErrorComponents from "../components/Error/ErrorComponents.jsx";
 
-function Error() {
+function Error () {
     return (
         <div>
-            <ErrorPage />
+            <ErrorComponents />
         </div>
     )
 }
 
-export default Error
+export default Error 

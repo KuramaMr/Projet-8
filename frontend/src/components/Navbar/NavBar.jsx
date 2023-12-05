@@ -7,7 +7,7 @@ function Header() {
         <body>
         <nav className='navbar'>
             <div className='navbar-logo'>
-                <img src="assets/images/LOGO.png" alt='Logo' />
+                <img src={require("../../assets/images/LOGO.png").default} alt='Logo' />
             </div>
             <div className='lien'>
             <Link to="/">Accueil</Link>

@@ -1,7 +1,7 @@
 import './Error.css';
 import { Link } from 'react-router-dom';
 
-function ErrorPage() {
+function ErrorComponents() {
     return(
         <div className='404Container'>
             <p>404</p>
@@ -13,4 +13,4 @@ function ErrorPage() {
     
 }
 
-export default ErrorPage
+export default ErrorComponents
