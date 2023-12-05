@@ -4,7 +4,6 @@ import './NavBar.css'
  
 function Header() {
     return (
-        <body>
         <nav className='navbar'>
             <div className='navbar-logo'>
                 <img src={require("../../assets/images/LOGO.png").default} alt='Logo' />
@@ -14,7 +13,6 @@ function Header() {
             <Link to="/about">À Propos</Link>
             </div>
         </nav>
-        </body>
     )
 }
 
