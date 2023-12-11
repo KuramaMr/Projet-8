@@ -6,4 +6,10 @@
 
 .lien a{
     padding-left: 57px;
+    color: red;
+}
+
+.logo {
+    width: 210.322px;
+    height: 68px;
 }

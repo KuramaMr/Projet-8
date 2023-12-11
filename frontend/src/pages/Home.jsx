@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div className="Banner">
-      <img src="assets/images/Falaise.png" alt="falaise"/>
+      <img src={require("../assets/images/Falaise.png")} alt="Falaise"/>
     </div>
   );
 }
