@@ -8,18 +8,20 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/Navbar/NavBar';
 import LogementFiche from './pages/LogementFiche.jsx';
 import Error from './pages/Error.jsx';
+import './styles/index.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-      <Router>
-          <NavBar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path='/logement' element={<LogementFiche />} />
-                <Route path="/404" element={<Error/>} />
-            </Routes>
+    <React.StrictMode>
+        <Router>
+            <NavBar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path='/logement' element={<LogementFiche />} />
+                    <Route path="/404" element={<Error/>} />
+                </Routes>
         </Router>
     </React.StrictMode>,
 );
