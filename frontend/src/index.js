@@ -5,7 +5,7 @@ import './styles/index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import reportWebVitals from './reportWebVitals';
-import Header from './components/Navbar/NavBar';
+import NavBar from './components/Navbar/NavBar';
 import LogementFiche from './pages/LogementFiche.jsx';
 import Error from './pages/Error.jsx';
 
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <Router>
-          <Header />
+          <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
