@@ -1,10 +1,13 @@
 import React from "react";
-import "./assets/images/Falaise.png"
+import "./Banner.css"
 
 function Banner() {
     return(
         <div className="banner">
-            <img src="./assets/images/Falaise.png" alt="Falaise"></img>
+            <img src={require("../../assets/images/Falaise.png")} alt="Falaise" className="imgBanner"></img>
+            <div className="texte">
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
         </div>
     )
 }

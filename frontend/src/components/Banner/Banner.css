@@ -1,0 +1,27 @@
+.banner{
+    position: relative;
+}
+
+.imgBanner{
+    width: 1240px;
+    height: 223px;
+    max-width: 100%;
+    border-radius: 20px;
+    display: flex;
+    object-fit: cover;
+}
+
+.texte{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    top: 30%;
+    width: 1240px;
+    max-width: 100%;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
