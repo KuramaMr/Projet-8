@@ -1,5 +1,11 @@
 .banner{
     position: relative;
+    background-color: black;
+    width: 1240px;
+    height: 223px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 43px;
 }
 
 .imgBanner{
@@ -9,6 +15,7 @@
     border-radius: 20px;
     display: flex;
     object-fit: cover;
+    opacity: 0.7;
 }
 
 .texte{
