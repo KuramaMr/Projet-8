@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import LogementFiche from './pages/LogementFiche.jsx';
 import Error from './pages/Error.jsx';
-import NavBar from "./components/Navbar/NavBar.jsx";
 import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
