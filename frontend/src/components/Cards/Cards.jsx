@@ -1,7 +1,7 @@
 import './Cards.css'
 import React from 'react'
 import { Link } from "react-router-dom"
-import records from "../Datas.json"
+import Datas from "../Datas.json"
 
 // composant qui permet de récupérer la liste des logements et de les afficher sous forme de card
 
@@ -10,8 +10,8 @@ const Cards = () => {
         <div className="logements">
 
             {/* liste la base de données */}
-            {records.map((record) => {
-                const { id, cover, title } = record;
+            {Datas.map((Data) => {
+                const { id, cover, title } = Data;
 
                 // affiche la fiche logement sur la page d'accueil
                 return (
