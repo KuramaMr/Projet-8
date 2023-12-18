@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./Footer.css"
 
 function Footer() {
     return(
         <div className="footer">
             <div className="img_footer"><img src={require("../../assets/images/LOGONoir.png")} alt="Logo Noir"/></div>
-            <div className="text_footer"></div>
+            <div className="text_footer"><p>© 2020 Kasa. All rights reserved</p></div>
         </div>
     )
 }
