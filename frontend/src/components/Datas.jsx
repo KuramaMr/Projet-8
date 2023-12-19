@@ -14,3 +14,7 @@ function Datas() {
         )
     })
 }
+
+export default Datas
+
+// Mis de côté 
