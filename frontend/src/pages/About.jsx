@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../components/Navbar/NavBar.jsx"
-
+import Footer from "../components/Footer/Footer.jsx"
+import Collapse from "../components/Collapse/Collapse.jsx";
+import "../styles/About.css"
 
 function About() {
         const fiabilite = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
@@ -10,6 +12,14 @@ function About() {
     return (
         <div>
             <NavBar />
+            <div className="banner"></div>
+            <div className="about">
+                <div><Collapse title="fiabilite" content={fiabilite} /></div>
+                <div><Collapse title="respect" content={respect} /></div>
+                <div><Collapse title="service" content={service} /></div>
+                <div><Collapse title="securite" content={securite} /></div>
+            </div>
+            <Footer />
         </div>
     )
 }
