@@ -10,14 +10,14 @@ function About() {
         const service   = "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
         const securite  = "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
     return (
-        <div>
+        <div className="about-content">
             <NavBar />
             <div className="banner"></div>
             <div className="about">
-                <div><Collapse title="fiabilite" content={fiabilite} /></div>
-                <div><Collapse title="respect" content={respect} /></div>
-                <div><Collapse title="service" content={service} /></div>
-                <div><Collapse title="securite" content={securite} /></div>
+                <div className="collapse"><Collapse title="fiabilite" content={fiabilite} /></div>
+                <div className="collapse"><Collapse title="respect" content={respect} /></div>
+                <div className="collapse"><Collapse title="service" content={service} /></div>
+                <div className="collapse"><Collapse title="securite" content={securite} /></div>
             </div>
             <Footer />
         </div>

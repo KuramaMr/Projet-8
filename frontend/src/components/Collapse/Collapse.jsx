@@ -13,7 +13,6 @@ function Collapse({title, content}) {
         setContentVisible(!contentVisible) // inverse la valeur actuelle
     }
 
-    const collapseContent = (contentVisible ? "visible" : "hidden") + "collapse"
     const collapseChevron = (contentVisible ? chevronUp : chevronDown)
 
     return (
@@ -21,7 +20,8 @@ function Collapse({title, content}) {
 
             <div className="affTitle" onClick={affContent}>
                     <div className="chevronCollapse">
-                        <img src={"collapseChevron"} alt="" />
+                        <span>{title}</span>
+                        <img src={collapseChevron} alt="" />
                     </div>
             </div>
 
