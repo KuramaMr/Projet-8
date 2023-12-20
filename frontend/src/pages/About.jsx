@@ -12,12 +12,14 @@ function About() {
     return (
         <div className="about-content">
             <NavBar />
-            <div className="banner"></div>
+            <div className="banner">
+                <img className="imgBanner" src={require("../assets/images/Montagne.png")} alt=""/>
+            </div>
             <div className="about">
-                <div className="collapse"><Collapse title="fiabilite" content={fiabilite} /></div>
-                <div className="collapse"><Collapse title="respect" content={respect} /></div>
-                <div className="collapse"><Collapse title="service" content={service} /></div>
-                <div className="collapse"><Collapse title="securite" content={securite} /></div>
+                <div className="collapse-container"><Collapse title="Fiabilité" content={fiabilite} /></div>
+                <div className="collapse-container"><Collapse title="Respect" content={respect} /></div>
+                <div className="collapse-container"><Collapse title="Service" content={service} /></div>
+                <div className="collapse-container"><Collapse title="Sécurité" content={securite} /></div>
             </div>
             <Footer />
         </div>

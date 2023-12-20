@@ -21,7 +21,7 @@ function Collapse({title, content}) {
             <div className="affTitle" onClick={affContent}>
                     <div className="chevronCollapse">
                         <span>{title}</span>
-                        <img src={collapseChevron} alt="" />
+                        <img className="imgChevron" src={collapseChevron} alt="" />
                     </div>
             </div>
 
