@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import chevronUp from "../../assets/images/ChevronUp.png";
 import chevronDown from "../../assets/images/ChevronDown.png";
-import "../Collapse/Collapse.css"
+import "../Collapse/Collapse.css";
 
 function Collapse({title, content}) {
 

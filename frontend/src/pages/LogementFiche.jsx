@@ -1,5 +1,67 @@
+import React, { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import records from "../components/Datas.json"
+import NavBar from "../components/Navbar/NavBar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
+import Carousel from "../components/Carousel/Carousel.jsx";
+import Error from "../pages/Error.jsx"
+import "../styles/LogementFiche.css"
+
+const arrayStars = [1, 2, 3, 4, 5]
+
 function LogementFiche () {
     
+    // récupère l'ID de l'URL
+    const [searchParams] = useSearchParams();
+    const [idLogement] = useState(searchParams.get('_id'));
+
+    // cherche l'id dans le fichier logements.json
+    const record = records.find(element => element.id === idLogement)
+
+    // si l'URL à été modifié manuellement, redirection vers la page d'erreur
+    if (!record) return(<Error />)
+ 
+    // récupère la liste des équipements
+    const equipements = record.equipments.map((element, index) => (
+        <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
+    ))
+
+    return (
+        <div className='logement'>
+            <NavBar />
+
+            {/* carousel d'images */}
+            <Carousel pictures={record.pictures}/>
+        
+
+            <div className='ficheLogements'>
+                <div className='div-description'>
+                    <h1>{record.title}</h1>
+                    <h4>{record.location}</h4>
+                        <div className='div-tags'>
+                            { record.tags.map((element, index) => {
+                                return(<p className='tags' key={"tags-"+index}>{element}</p>)
+                            })}
+                        </div>
+                </div>
+            </div>
+
+        
+        
+        </div>
+    )
+
+
+
+
+
+
+
+
+
+
+
 }
 
 export default LogementFiche 
