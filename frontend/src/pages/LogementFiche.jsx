@@ -31,37 +31,51 @@ function LogementFiche () {
         <div className='logement'>
             <NavBar />
 
-            {/* carousel d'images */}
-            <Carousel pictures={record.pictures}/>
+                {/* carousel d'images */}
+                    <Carousel pictures={record.pictures}/>
         
+                        <div className='ficheLogements'>
 
-            <div className='ficheLogements'>
-                <div className='div-description'>
-                    <h1>{record.title}</h1>
-                    <h4>{record.location}</h4>
-                        <div className='div-tags'>
-                            { record.tags.map((element, index) => {
-                                return(<p className='tags' key={"tags-"+index}>{element}</p>)
-                            })}
+                            <div className='div-description'>
+
+                                <h1>{record.title}</h1>
+                                <h4>{record.location}</h4>
+                                    <div className='div-tags'>
+
+                                        { record.tags.map((element, index) => {
+                                         return(<p className='tags' key={"tags-"+index}>{element}</p>)
+                                        })}
+                                    </div>
+                            </div>
                         </div>
-                </div>
-            </div>
 
-        
-        
+                        {/* 2 - Affiche le nom du propriétaireet sa photo */}
+                        <div className='bloc-stars'>
+                            <div className='div-etoiles'>
+                                <p>{record.host.name}</p>
+                                <img src={record.host.picture} alt={record.title} />
+                            </div>
+                        
+                            {/* 3 - Met et colorie les étoiles */}
+                            <div className='stars'>
+                                {
+                                arrayStars.map(element => {
+                                    const nbreEtoiles = parseInt(record.rating)
+                                    return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)
+                                })
+                                }
+                            </div>
+                        </div>
+
+                        {/* affiche la description et les équipements */}
+                        <div className='collapseLogement'>
+                            <Collapse title="Description" content={record.description} />
+                            <Collapse title="Equipements" content={equipements} />
+                        </div>
+
+                <Footer />
         </div>
     )
-
-
-
-
-
-
-
-
-
-
-
 }
 
 export default LogementFiche 
