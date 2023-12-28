@@ -47,26 +47,26 @@ function LogementFiche () {
                                         })}
                                     </div>
                             </div>
-                        </div>
-
-                        {/* 2 - Affiche le nom du propriétaireet sa photo */}
-                        <div className='bloc-stars'>
-                            <div className='div-etoiles'>
-                                <p>{record.host.name}</p>
-                                <img src={record.host.picture} alt={record.title} />
-                            </div>
                         
-                            {/* 3 - Met et colorie les étoiles */}
-                            <div className='stars'>
-                                {
-                                arrayStars.map(element => {
-                                    const nbreEtoiles = parseInt(record.rating)
-                                    return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)
-                                })
-                                }
+
+                            {/* 2 - Affiche le nom du propriétaireet sa photo */}
+                            <div className='bloc-stars'>
+                                <div className='div-etoiles'>
+                                    <p>{record.host.name}</p>
+                                    <img src={record.host.picture} alt={record.title} />
+                                </div>
+                        
+                                {/* 3 - Met et colorie les étoiles */}
+                                <div className='stars'>
+                                    {
+                                    arrayStars.map(element => {
+                                        const nbreEtoiles = parseInt(record.rating)
+                                        return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)
+                                 })
+                                    }
+                                </div>
                             </div>
                         </div>
-
                         {/* affiche la description et les équipements */}
                         <div className='collapseLogement'>
                             <Collapse title="Description" content={record.description} />
