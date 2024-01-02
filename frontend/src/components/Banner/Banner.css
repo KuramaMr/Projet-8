@@ -1,7 +1,6 @@
 .banner{
     position: relative;
     background-color: black;
-    width: 1240px;
     height: 223px;
     max-width: 100%;
     border-radius: 20px;
@@ -9,7 +8,7 @@
 }
 
 .imgBanner{
-    width: 1240px;
+    width: 100%;
     height: 223px;
     max-width: 100%;
     border-radius: 20px;
@@ -25,7 +24,7 @@
     font-family: Georgia;
     margin: 0 auto;
     top: 30%;
-    width: 1240px;
+    width: 100%;
     max-width: 100%;
     color: white;
     font-family: Montserrat;

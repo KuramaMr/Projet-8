@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer.jsx";
 import Collapse from "../components/Collapse/Collapse.jsx";
 import Carousel from "../components/Carousel/Carousel.jsx";
 import Error from "../pages/Error.jsx"
+import Marge from "../components/Marge/Marge.jsx"
 import "../styles/LogementFiche.css"
 
 const arrayStars = [1, 2, 3, 4, 5]
@@ -29,6 +30,7 @@ function LogementFiche () {
 
     return (
         <div className='logement'>
+            <Marge>
             <NavBar />
 
                 {/* carousel d'images */}
@@ -72,7 +74,7 @@ function LogementFiche () {
                             <Collapse title="Description" content={record.description} />
                             <Collapse title="Equipements" content={equipements} />
                         </div>
-
+                </Marge>
                 <Footer />
         </div>
     )

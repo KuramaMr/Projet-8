@@ -1,17 +1,20 @@
-import './Error.css';
+import './ErrorComponents.css';
 import { Link } from 'react-router-dom';
 import NavBar from "../Navbar/NavBar.jsx";
 import Footer from "../Footer/Footer.jsx";
+import Marge from '../Marge/Marge.jsx';
+
 
 function ErrorComponents() {
     return(
         
-        <div className='404Container'>
+        <div className='erreurContainer'>
+            <Marge>
             <NavBar />
-            <p>404</p>
-            <p>Oups ! La page que vous demandez n'existe pas.</p>
-            <Link to={"/"}>
-            </Link>
+            <span>404</span>
+            <h4>Oups ! La page que vous demandez n'existe pas.</h4>
+            <p><Link to={"/"}>Retourner sur la page d'accueil</Link></p>
+            </Marge>
             <Footer />
         </div>
     )

@@ -2,14 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
     max-width: 100%;
     margin-bottom: 63px;
 }
 
 .lien a{
     padding-left: 57px;
-    color: red;
+    color: #FF6060;
 }
 
 .logo {

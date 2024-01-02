@@ -8,8 +8,7 @@
 .ficheLogements {
     display: flex;
     flex-direction: row;
-    width: 1240px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .div-description h4 {
@@ -98,12 +97,12 @@
     display: flex;
     gap: 76px;
     margin-top: 20px;
-    width: 1240px;
-    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     margin-bottom: 20px;
 }
 
 .collapse {
-    width: 582px;
+    margin-top: 20px;
+    width: 100%;
 }
