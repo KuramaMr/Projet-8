@@ -9,9 +9,15 @@
 .lien a{
     padding-left: 57px;
     color: #FF6060;
+    font-size: 24px;
 }
 
 .logo {
     width: 210.322px;
     height: 68px;
+}
+
+@media (max-width: 768px) {
+    .navbar .lien a { text-transform: uppercase; }
+    .navbar .lien a { font-size: 12px; }
 }
