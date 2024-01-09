@@ -1,14 +1,6 @@
-# Kasa API
+Projet 8 de la formation testeur logiciel chez OpenClassRooms.
 
-## Prerequisites
-You need Docker to launch the app API or you can use service installing nodejs on your system and running in backend forlder the following commandes: `npm install` then `npm start`
+On retrouve du HTML, CSS, JavaScript et du React.
 
-## Launch Project
-
-With Docker run command
-
-`docker-compose up -d`
-
-To stop project run
-`docker-compose down`
+Projet affectué avec Yarn.
 
