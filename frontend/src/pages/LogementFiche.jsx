@@ -17,7 +17,7 @@ function LogementFiche () {
     const [searchParams] = useSearchParams();
     const [idLogement] = useState(searchParams.get('_id'));
 
-    // cherche l'id dans le fichier logements.json
+    // cherche l'id dans le fichier Datas.json
     const record = records.find(element => element.id === idLogement)
 
     // si l'URL à été modifié manuellement, redirection vers la page d'erreur
@@ -72,7 +72,7 @@ function LogementFiche () {
                         {/* affiche la description et les équipements */}
                         <div className='collapseLogement'>
                             <Collapse title="Description" content={record.description} />
-                            <Collapse title="Equipements" content={equipements} />
+                            <Collapse title="Équipements" content={equipements} />
                         </div>
                 </Marge>
                 <Footer />
