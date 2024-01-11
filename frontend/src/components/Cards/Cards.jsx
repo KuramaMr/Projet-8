@@ -1,16 +1,28 @@
 import './Cards.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import Datas from "../Datas.json";
 
 // composant qui permet de récupérer la liste des logements et de les afficher sous forme de card
 
-const Cards = () => {
+
+
+function Cards() {
+
+    const [datas, setDatas] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:8080/api/properties')
+        .then(response => response.json())
+        .then(data => {
+            setDatas(data);
+        })
+    })
+
     return (
         <div className="logements">
 
             {/* liste la base de données */}
-            {Datas.map((Data) => {
+            {datas.map((Data) => {
                 const { id, cover, title } = Data;
 
                 // affiche la fiche logement sur la page d'accueil

@@ -3,6 +3,8 @@ import ChevronLeft from '../../assets/images/ChevronLeft.png';
 import ChevronRight from '../../assets/images/ChevronRight.png';
 import "../Carousel/Carousel.css";
 
+
+
 function Carousel({pictures}) {
 
     const [index, setIndex] = useState(0) // variable de compteur, défini au départ sur 0

@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import records from "../components/Datas.json"
 import NavBar from "../components/Navbar/NavBar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Collapse from "../components/Collapse/Collapse.jsx";
@@ -15,10 +14,20 @@ function LogementFiche () {
     
     // récupère l'ID de l'URL
     const [searchParams] = useSearchParams();
-    const [idLogement] = useState(searchParams.get('_id'));
+    const [idLogement, setIdLogement] = useState(searchParams.get('_id'));
+    const [id, setId] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:8080/api/properties')
+        .then(response => response.json())
+        .then(data => {
+            setIdLogement(idLogement);
+            setId(data);
+        })
+    })
 
     // cherche l'id dans le fichier Datas.json
-    const record = records.find(element => element.id === idLogement)
+    const record = id.find(element => element.id === idLogement)
 
     // si l'URL à été modifié manuellement, redirection vers la page d'erreur
     if (!record) return(<Error />)

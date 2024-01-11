@@ -3,6 +3,7 @@ import chevronUp from "../../assets/images/ChevronUp.png";
 import chevronDown from "../../assets/images/ChevronDown.png";
 import "../Collapse/Collapse.css";
 
+
 function Collapse({title, content}) {
 
     const [contentVisible, setContentVisible] = useState(true)
