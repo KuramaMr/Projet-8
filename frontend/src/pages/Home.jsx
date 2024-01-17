@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/Navbar/NavBar.jsx";
 import Banner from "../components/Banner/Banner.jsx";
-import Cards from "../components/Cards/Cards.jsx";
+import LogementsCards from "../components/LogementsCards/LogementsCards.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import Marge from "../components/Marge/Marge.jsx";
 
@@ -11,7 +11,7 @@ function Home() {
       <Marge>
       <NavBar />
       <Banner />
-      <Cards />
+      <LogementsCards />
       </Marge>
       <Footer />
     </div>

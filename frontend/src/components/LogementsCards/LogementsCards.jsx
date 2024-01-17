@@ -1,4 +1,4 @@
-import './Cards.css';
+import './LogementsCards.css';
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Cards() {
+function LogementsCards() {
 
     const [datas, setDatas] = useState([])
 
@@ -39,4 +39,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default LogementsCards

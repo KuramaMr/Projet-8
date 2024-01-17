@@ -26,7 +26,7 @@ function LogementFiche () {
         })
     })
 
-    // cherche l'id dans le fichier Datas.json
+    // cherche l'id du côté back-end
     const record = id.find(element => element.id === idLogement)
 
     // si l'URL à été modifié manuellement, redirection vers la page d'erreur
